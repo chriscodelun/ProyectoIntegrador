@@ -7,7 +7,7 @@ public class Main {
         VectorCelularesDefectuosos vec=new VectorCelularesDefectuosos(4);
         vec.capturarCelularesDefectuosos();
         vec.mostrarCelularesDefectuosos();
-        //guazaa
+        
 
 
         
