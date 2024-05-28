@@ -11,8 +11,21 @@ public class CelularesNuevos extends Celulares{
 
 
     public CelularesNuevos() {
+        boolean ban=true;
         fechaIngreso=JOptionPane.showInputDialog("Fecha de ingreso del celular");
-        precio=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el precio del celular"));
+        while (ban) {
+            try{
+                precio=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el precio del celular"));
+                ban=false;
+            }
+            
+            catch(NumberFormatException e){
+                JOptionPane.showMessageDialog(null,"Vuelva a ingresar el precio (solo valores numericos)");
+            }
+            
+        }
+        
+        
           
     }
     public String datosCelNuevo()
